@@ -10,19 +10,20 @@
     <link
       rel="icon"
       href="assets/favicons/favicon-32x32.png"
-      type="image/png" />
+      type="image/png"
+    />
     <link rel="stylesheet" href="public/styles/normalize.css" />
     <link rel="stylesheet" href="public/styles/main.css" />
     <script src="script.js"></script>
   </head>
   <body>
     <header class="header">
-      <img src="assets/Images/head.png" class="header__bg" />
+      <img src="assets/Images/head.png" class="header__bg" / >
       <img
         src="assets/Icons/menu.png"
         alt="Открыть меню сайта"
         class="header__logo"
-      />
+              />
     </header>
     <div class="menu_block">
       <div class="menu">
@@ -146,7 +147,7 @@
       </div>
       <!-- Указатель ареал -->
       <div
-        class="main__item"
+        class="indicator__item"
         style="top: 610px; left: 800px; width: 150px; height: 150px"
       >
         <a href="page8.html">
@@ -159,7 +160,7 @@
       </div>
       <!-- Указатель строение -->
       <div
-        class="main__item"
+        class="indicator__item"
         style="top: 1000px; left: 150px; width: 150px; height: 150px"
       >
         <a href="page9.html">
@@ -172,7 +173,7 @@
       </div>
       <!-- Указатель друзья -->
       <div
-        class="main__item"
+        class="indicator__item"
         style="top: 1300px; left: 750px; width: 150px; height: 150px"
       >
         <a href="page10.html">
@@ -185,7 +186,7 @@
       </div>
       <!-- Указатель питание -->
       <div
-        class="main__item"
+        class="indicator__item"
         style="top: 1600px; left: 240px; width: 150px; height: 150px"
       >
         <a href="page11.html">
@@ -198,7 +199,7 @@
       </div>
       <!-- Указатель Размножение -->
       <div
-        class="main__item"
+        class="indicator__item"
         style="top: 2400px; left: 200px; width: 150px; height: 150px"
       >
         <a href="page12.html">
@@ -211,7 +212,7 @@
       </div>
       <!-- Указатель враги -->
       <div
-        class="main__item"
+        class="indicator__item"
         style="top: 3000px; left: 400px; width: 150px; height: 150px"
       >
         <a href="page13.html">
@@ -224,7 +225,7 @@
       </div>
       <!-- Указатель искусство -->
       <div
-        class="main__item"
+        class="indicator__item"
         style="top: 2750px; left: 1100px; width: 150px; height: 150px"
       >
         <a href="page14.html">
@@ -236,12 +237,56 @@
         </a>
       </div>
       <!-- Большой блок 800x400 — можно менять координаты -->
-      <div class="main__item" style="top: 3500px; left: 650px">
-        <a href="page15.html">
-          <img src="assets/Images/item15.jpg" alt="Item 15" />
+      <div class="main__item" style="top: 3500px; left: 650px"></div>
+    </main>
+    <footer class="footer">
+      <!-- Соцсети -->
+      <div class="footer__icons">
+        <a href="#" title="VK">
+          <img src="assets\Icons\icon_vk.png" width="170px" height="170px" />
+        </a>
+        <a href="#" title="Dzen">
+          <img src="assets\Icons\icon_dzen.png" width="170px" height="170px" />
+        </a>
+        <a href="#" title="MAX">
+          <img src="assets\Icons\icon_max.png" width="170px" height="170px" />
+        </a>
+        <a href="#" title="Odnoklassniki">
+          <img src="assets\Icons\icon_ok.png" width="170px" height="170px" />
+        </a>
+        <a href="#" title="Rutube">
+          <img
+            src="assets\Icons\icon_rutube.png"
+            width="170px"
+            height="170px"
+          />
         </a>
       </div>
-    </main>
-    <footer></footer>
+      <!-- Вторая строка -->
+      <div class="footer__bottom">
+        <!-- Использованная литература -->
+        <div class="footer__bottom-left">
+          <a href="/about" title="Использованная литература">
+            <img
+              src="assets/Icons/used_literature.png"
+              alt="Использованная литература"
+            />
+          </a>
+        </div>
+        <!-- Сайт института ВХУТЕИН -->
+        <div class="footer__bottom-right">
+          <a
+            href="https://www.vhutein.ru/"
+            target="_blank"
+            title="Сайт института ВХУТЕИН"
+          >
+            <img
+              src="assets/Images/logo_vhutein.png"
+              alt="Сайт института ВХУТЕИН"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

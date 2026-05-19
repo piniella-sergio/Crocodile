@@ -1,4 +1,5 @@
 @import url("fonts.css");
+@import url("header.css");
 @import url("footer.css");
 
 html,
@@ -20,33 +21,7 @@ body {
   position: relative;
 }
 
-.header {
-  position: relative;
-  width: 100%;
-  min-height: 100px;
-  /* минимальная высота, если контента мало */
-  overflow: hidden;
-  margin-bottom: 100px;
-}
 
-/* фон - прижат к верху, по центру по горизонтали */
-.header__bg {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* Иконка меню — 100х100, у нижнего края, 600px от центра */
-.header__logo {
-  position: absolute;
-  bottom: 0;
-  left: calc(50% - 700px);
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-  z-index: 9;
-}
 
 .main {
   position: relative;
@@ -109,6 +84,23 @@ body {
 }
 
 .main__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.indicator__item {
+  position: absolute;
+  z-index: 2;
+}
+
+.indicator__item a {
+  display: block;
+}
+.indicator__item a:hover {
+  transform: scale(1.2);
+}
+.indicator__item img {
   display: block;
   width: 100%;
   height: auto;

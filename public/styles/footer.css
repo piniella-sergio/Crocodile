@@ -1,0 +1,61 @@
+.footer {
+  width: 100%;
+  padding: 40px 50px 30px 50px;
+  margin-bottom: 150px; /* отступ от нижнего края страницы */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* ---- Первая строка: иконки ---- */
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px; /* одинаковое расстояние между иконками */
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+
+.footer__icons a:hover {
+  transform: translateY(-4px);
+}
+/* ---- Вторая строка: картинки по углам ---- */
+.footer__bottom {
+  position: relative;
+  width: 100%;
+  height: 80px; /* высота для позиционирования */
+  margin-top: 180px;
+}
+
+.footer__bottom-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  left: 0px;
+}
+
+.footer__bottom-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  right: 0px;
+}
+
+.footer__bottom-left a,
+.footer__bottom-right a {
+  display: block;
+  transition: opacity 0.3s;
+}
+
+.footer__bottom-left a:hover,
+.footer__bottom-right a:hover {
+  opacity: 0.7;
+}
+
+.footer__bottom-left img,
+.footer__bottom-right img {
+  width:;
+  height: 160px;
+  object-fit: cover;
+}
