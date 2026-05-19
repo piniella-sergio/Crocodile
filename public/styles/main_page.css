@@ -1,0 +1,58 @@
+
+
+
+.main {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto; /* центрируем main на странице */
+  min-height: 200px; /* минимальная высота */
+}
+
+/* Фоновая картинка — растягивается на весь main */
+.main__bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Большой блок 800x400 */
+.main__feature {
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  z-index: 2;
+}
+
+.main__feature a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.main__feature img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Маленькие блоки (15 штук) */
+.main__item {
+  position: absolute;
+  z-index: 2;
+}
+
+.main__item a {
+  display: block;
+}
+
+.main__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
