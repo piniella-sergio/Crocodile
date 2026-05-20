@@ -42,9 +42,7 @@ window.addEventListener('DOMContentLoaded', function domLoadedHandler(e) {
     Visible(element);
   });
 
-  document.querySelector(".header__logo").addEventListener('click', () => {
-    document.querySelector(".menu_block").classList.toggle('active');
-  });
+
 }, false);
 document.addEventListener("DOMContentLoaded", function () {
   const menuIcon = document.getElementById("menuIcon");
@@ -55,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       setTimeout(() => {
         this.classList.remove("shrink");
+        document.querySelector(".menu_block").classList.toggle('active');
       }, 300);
     });
   }
