@@ -1,34 +1,357 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Страница не найдена — 404</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            font-size: 3em;
-            color: #ff6347;
-        }
-        p {
-            font-size: 1.2em;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <h1>404</h1>
-    <p>Упс! Страница, которую вы ищете, не существует.</p>
-    <p>Вернитесь на <a href="/">главную страницу</a> или воспользуйтесь поиском.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Нильский крокодил</title>
+    <link
+      rel="icon"
+      href="assets/favicons/favicon-32x32.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/areal.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img src="assets/Images/head.png" class="header__bg" />
+      <img
+        src="assets/Icons/menu.png"
+        alt="Открыть меню сайта"
+        class="header__logo"
+        id="menuIcon"
+      />
+    </header>
+
+    <div class="menu_block">
+      <div class="menu">
+        <div class="menu_item"><a href="index.html">Главная</a></div>
+        <div class="menu_item"><a href="areal.html">Ареал</a></div>
+        <div class="menu_item"><a href="nutrition.html">Питание</a></div>
+        <div class="menu_item"><a href="enemies.html">Враги</a></div>
+        <div class="menu_item"><a href="reproduction.html">Размножение</a></div>
+        <div class="menu_item">
+          <a href="metamorphosis.html">Метаморфозы</a>
+        </div>
+        <div class="menu_item"><a href="art.html">В искусстве</a></div>
+        <div class="menu_item"><a href="friends.html">Друзья</a></div>
+        <div class="menu_item"><a href="#">Строение</a></div>
+      </div>
+    </div>
+    <main class="main">
+
+      <div class="structure-container">
+
+        <!-- Верхняя сетка: 4 строки -->
+<div class="structure-grid structure-grid-top">
+  <!-- Новая строка 1: ячейка на всю ширину, текст по центру -->
+  <div class="structure-cell structure-cell-full structure-cell-center">
+    <h2>Строение</h2><br>
+  </div>
+
+  <!-- Новая строка 2: ячейка на всю ширину, текст по левому краю -->
+  <div class="structure-cell structure-cell-full structure-cell-left">
+    <p>
+      <strong>Нильский крокодил</strong> появляется на свет из яйца! <br>Да, как цыплёнок!
+    </p><br>
+  </div>
+
+  <!-- Оригинальные колонки с содержимым (начинаются с 3‑й строки) -->
+  <div class="structure-column">
+    <div class="structure-cell"><h3>Размер</h3></div>
+    <div class="structure-cell">
+      <p>
+        Размер: примерно как большое куриное или утиное яйцо, но чуть
+        крупнее. Длина — около 8–10 см.
+      </p>
+    </div>
+    <div class="structure-cell"></div>
+    <div class="structure-cell"></div>
+  </div>
+
+  <div class="structure-column">
+    <div class="structure-cell"><h3>Форма</h3></div>
+    <div class="structure-cell">
+      <p>Овальная, немного вытянутая.</p>
+    </div>
+    <div class="structure-cell"><h3>Кожистая оболочка</h3></div>
+    <div class="structure-cell">
+      <p>
+        Тонкий слой под скорлупой. Он помогает сохранять влагу внутри
+        яйца.
+      </p>
+    </div>
+  </div>
+
+  <div class="structure-column">
+    <div class="structure-cell"><h3>Цвет</h3></div>
+    <div class="structure-cell">
+      <p>
+        Грязновато‑белый или бежевый, иногда с лёгким коричневатым
+        оттенком.
+      </p>
+    </div>
+    <div class="structure-cell"></div>
+    <div class="structure-cell"></div>
+  </div>
+</div>
+
+
+        <!-- Средняя сетка: 3 столбца -->
+        <div class="structure-grid structure-grid-middle">
+          <div class="structure-column">
+            <div class="structure-cell">
+              <h3>Скорлупа</h3>
+              <br />
+              <p>
+                Не такая твёрдая, <br />как у куриного <br />яйца. <br />Она
+                кожистая,<br />гибкая <br />и немного <br />шершавая <br />на
+                ощупь.
+              </p>
+              <br />
+            </div>
+            <div class="structure-cell"></div>
+          </div>
+
+          <div class="structure-column structure-column-adaptive">
+            <!-- Ячейка с картинкой, ширина зависит от размера изображения -->
+            <div class="structure-cell structure-cell-merged">
+              <img src="#" alt="" class="structure-image" />
+            </div>
+          </div>
+
+          <div class="structure-column">
+            <div class="structure-cell">
+              <h3>&nbsp;&nbsp;&nbsp;Зародыш</h3>
+            </div>
+            <div class="structure-cell">
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Будущий крокодильчик.
+                <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Он прикреплён
+                <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;к желтку
+                <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;и постепенно растёт,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;пока
+                не будет готов <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;вылупиться.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Нижняя сетка: 2 строки -->
+        <div class="structure-grid structure-grid-bottom">
+          <div class="structure-column">
+            <div class="structure-cell">
+              <p>
+                <h3>Желток</h3><br>Питательная «заправка» для малыша. В нём много полезных веществ,
+                которые помогают крокодильчику расти внутри яйца.
+              </p>
+            </div>
+            <div class="structure-cell"></div>
+          </div>
+
+          <div class="structure-column">
+            <div class="structure-cell"><h3><br><br>Белок</h3></div>
+            <div class="structure-cell">
+              Желеобразная масса вокруг желтка. Она смягчает толчки и защищает
+              зародыш.
+            </div>
+          </div>
+
+          <div class="structure-column">
+            <div class="structure-cell">
+              <h3>Воздушная камера</h3>
+            </div>
+            <div class="structure-cell">
+              <p>
+                Небольшой «пузырёк» воздуха на тупом конце яйца. Перед
+                вылуплением малыш использует этот воздух для первого вдоха.
+              </p>
+            </div>
+          </div>
+        </div>
+              <!-- Картинка с произвольным позиционированием -->
+        <img
+        src="assets\Images\Structure\embryo.png"
+        alt="Зародыш в яйце"
+        class="embryo-image"
+        />
+      </div>
+      
+      <div class="bodystr-container">
+  <!-- Строка 1: объединённая ячейка -->
+  <div class="bodystr-row">
+    <div class="bodystr-cell bodystr-full"><h3>Голова</h3></div>
+  </div>
+
+  <!-- Строка 2 -->
+  <div class="bodystr-row">
+    <div class="bodystr-cell"><video autoplay muted loop playsinline poster="preview.jpg">
+              <source src="assets\animation\struct1.webm" type="video/webm" />
+              Ваш браузер не поддерживает воспроизведение видео.
+            </video></div>
+    <div class="bodystr-cell"><video autoplay muted loop playsinline poster="preview.jpg">
+              <source src="assets\animation\struct2.webm" type="video/webm" />
+              Ваш браузер не поддерживает воспроизведение видео.
+            </video></div>
+  </div>
+
+  <!-- Строки 3–4 -->
+  <div class="bodystr-row">
+    <div class="bodystr-cell"><p>Тело крокодила покрыто прочной кожей с твёрдыми роговыми щитками. Эти щитки как доспехи - они защищают от царапин и укусов. Цвет кожи — тёмно‑зелёный или коричневыйс тёмными пятнами — помогаетпрятаться средиводорослей и камней. На спинещитки крупнее, а на животе — мягчеи тоньше.</p></div>
+    <div class="bodystr-cell"><p>Хвост — главный двигатель крокодила в воде. Он длинный, сильный и сплюснут с боков. Когда крокодил плывёт, он изгибает хвост из стороны в сторону, как рыба. Ещё хвост помогает ему поворачивать и даже прыгать из воды, чтобы поймать добычу.</p></div>
+  </div>
+  <div class="bodystr-row">
+    <div class="bodystr-cell"><h3>Кожа</h3></div>
+    <div class="bodystr-cell"><h3>Хвост</h3></div>
+  </div>
+
+  <!-- Строка 5: две колонки с картинками -->
+  <div class="bodystr-row">
+    <div class="bodystr-cell"><video autoplay muted loop playsinline poster="preview.jpg">
+              <source src="assets\animation\struct3.webm" type="video/webm" />
+              Ваш браузер не поддерживает воспроизведение видео.
+            </video></div>
+    <div class="bodystr-cell"><video autoplay muted loop playsinline poster="preview.jpg">
+              <source src="assets\animation\struct4.webm" type="video/webm" />
+              Ваш браузер не поддерживает воспроизведение видео.
+            </video></div>
+  </div>
+
+  <!-- Строка 6: две колонки без контента -->
+  <div class="bodystr-row">
+    <div class="bodystr-cell"><p>Тело крокодила покрыто прочной кожей с твёрдыми роговыми щитками. Эти щитки как доспехи - они защищают от царапин и укусов. Цвет кожи — тёмно‑зелёный или коричневыйс тёмными пятнами — помогаетпрятаться средиводорослей и камней. На спинещитки крупнее, а на животе — мягчеи тоньше.</p></div>
+    <div class="bodystr-cell"><p>Хвост — главный двигатель крокодила в воде. Он длинный, сильный и сплюснут с боков. Когда крокодил плывёт, он изгибает хвост из стороны в сторону, как рыба. Ещё хвост помогает ему поворачивать и даже прыгать из воды, чтобы поймать добычу.</p></div>
+  </div>
+
+  <!-- Строка 7: объединённая ячейка -->
+  <div class="bodystr-row">
+    <div class="bodystr-cell bodystr-full"><h3>Лапы</h3></div>
+  </div>
+
+  <!-- Строка 8: две колонки без контента -->
+  <div class="bodystr-row">
+    <div class="bodystr-cell"><video autoplay muted loop playsinline poster="preview.jpg">
+              <source src="assets\animation\struct5.webm" type="video/webm" /></div>
+    <div class="bodystr-cell"><video autoplay muted loop playsinline poster="preview.jpg">
+              <source src="assets\animation\struct6.webm" type="video/webm" /></div>
+  </div>
+
+  <!-- Строка 9: объединённая ячейка -->
+  <div class="bodystr-row">
+    <div class="bodystr-cell bodystr-two"><p>У крокодила четыре короткие, но сильные лапы. На передних — по 5 пальцев, на задних — по 4, и между ними есть небольшие перепонки. Это помогает ему грести в воде. На суше крокодил ходит медленно, а в воде плывёт быстро, помогая себе мощным хвостом.</p></div>
+  </div>
+
+  <!-- Строка 10: объединённая ячейка -->
+  <div class="bodystr-row">
+    <div class="bodystr-cell bodystr-full"><h3>Органы чувств</h3></div>
+      <!-- Строка 13: объединённая ячейка -->
+  <div class="bodystr-row">
+    <div class="bodystr-cell bodystr-two"><p>Глаза с вертикальными зрачками видят в темноте и замечают движение издалека.
+Ноздри закрываются специальными клапанами под водой — так вода не попадает внутрь.
+Уши тоже закрываются складками кожи, когда крокодил ныряет.
+На морде и вокруг пасти есть чувствительные бугорки — они улавливают малейшие колебания воды. Благодаря им крокодил чувствует, где плывёт рыба, даже если ничего не видит</p></div>
+  </div>
+  </div>
+
+  <!-- Строка 11: две колонки с картинками -->
+  <div class="bodystr-row">
+    <div class="bodystr-cell"><img src="assets/Images/Structure/struct7.jpg" alt="Изображение 11-1" class="bodystr-img"></div>
+    <div class="bodystr-cell"><img src="assets/Images/Structure/struct6.jpg" alt="Изображение 11-2" class="bodystr-img"></div>
+  </div>
+  <!-- Строка 12: объединённая ячейка -->
+  <div class="bodystr-row">
+    <div class="bodystr-cell bodystr-two"><h3>Внутренние особенности</h3></div>
+  </div>
+  <!-- Строка 14: объединённая ячейка -->
+  <div class="bodystr-row">
+    <div class="bodystr-cell bodystr-two"><p>Мощные челюсти создают огромное давление при укусе — нильский крокодил один из самых сильных хищников планеты.
+Сердце у крокодила особенное: оно может замедлять работу, чтобы долго находиться под водой без воздуха.
+Крокодил может задерживать дыхание на 2 часа — это помогает ему незаметно подкрадываться к добыче.</p></div>
+  </div>
+
+  <!-- Строка 15: объединённая ячейка -->
+  <div class="bodystr-row">
+    <div class="bodystr-cell bodystr-full"><h3>ИНТЕРЕСНЫЕ ФАКТЫ</h3></div>
+        <div class="bodystr-cell bodystr-two"><p>Длина взрослого нильского крокодила может достигать 5–6 метров — это как два автобуса, поставленных друг за другом.
+Весит такой гигант до 700 кг — столько же, сколько маленький автомобиль.
+Кожа крокодила не потеет: чтобы остыть, он открывает пасть на берегу — это называется «зевком».
+Крокодилы глотают мелкие камни — они помогают переваривать пищу и делают крокодила устойчивее в воде.</p></div>
+  </div>
+
+  <!-- Строка 16: две колонки с картинками -->
+  <div class="bodystr-row">
+    <div class="bodystr-cell"><a href="index.html">
+                <img
+                  src="assets/Images/indicator back.png"
+                  alt="Item 16"
+                  class="element-animation"
+                />
+              </a></div>
+    <div class="bodystr-cell"><a href="index.html">
+                <img
+                  src="assets\Images\indicator forward.png"
+                  alt="Item 16"
+                  class="element-animation"
+                />
+              </a></div>
+  </div>
+</div>
+
+
+    </main>
+ 
+    <footer class="footer">
+      <!-- Соцсети -->
+      <div class="footer__icons">
+        <a href="#" title="VK">
+          <img src="assets\Icons\icon_vk.png" width="170px" height="170px" />
+        </a>
+        <a href="#" title="Dzen">
+          <img src="assets\Icons\icon_dzen.png" width="170px" height="170px" />
+        </a>
+        <a href="#" title="MAX">
+          <img src="assets\Icons\icon_max.png" width="170px" height="170px" />
+        </a>
+        <a href="#" title="Odnoklassniki">
+          <img src="assets\Icons\icon_ok.png" width="170px" height="170px" />
+        </a>
+        <a href="#" title="Rutube">
+          <img
+            src="assets\Icons\icon_rutube.png"
+            width="170px"
+            height="170px"
+          />
+        </a>
+      </div>
+      <!-- Вторая строка -->
+      <div class="footer__bottom">
+        <!-- Использованная литература -->
+        <div class="footer__bottom-left">
+          <a href="Literatura.html" title="Использованная литература">
+            <img
+              src="assets/Icons/used_literature.png"
+              alt="Использованная литература"
+            />
+          </a>
+        </div>
+        <!-- Сайт института ВХУТЕИН -->
+        <div class="footer__bottom-right">
+          <a
+            href="https://www.vhutein.ru/"
+            target="_blank"
+            title="Сайт института ВХУТЕИН"
+          >
+            <img
+              src="assets/Images/logo_vhutein.png"
+              alt="Сайт института ВХУТЕИН"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
