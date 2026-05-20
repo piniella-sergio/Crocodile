@@ -2,9 +2,8 @@
   position: relative;
   width: 100%;
   min-height: 100px;
-  /* минимальная высота, если контента мало */
   overflow: hidden;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 /* фон - прижат к верху, по центру по горизонтали */
@@ -24,4 +23,19 @@
   height: 200px;
   object-fit: contain;
   z-index: 9;
+
+  /* Плавный переход для всех трансформаций */
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
+
+/* При наведении — увеличение на 20% */
+.header__logo:hover {
+  transform: scale(1.2);
+}
+
+/* При клике — уменьшение на 20% (через JS добавится класс) */
+.header__logo.shrink {
+  transform: scale(0.9);
+}
+

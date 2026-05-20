@@ -1,15 +1,3 @@
-console.log("Привет, Сергей! Сегодня чудесный день");
-const a = 2;
-const b = 7;
-
-function summer(a, b) {
-  return a + b;
-}
-console.log(summer(a, b));
-
-
-
-
 var Visible = function (target) {
   // Все позиции элемента
   var targetPosition = {
@@ -58,3 +46,16 @@ window.addEventListener('DOMContentLoaded', function domLoadedHandler(e) {
     document.querySelector(".menu_block").classList.toggle('active');
   });
 }, false);
+document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.getElementById("menuIcon");
+
+  if (menuIcon) {
+    menuIcon.addEventListener("click", function () {
+      this.classList.add("shrink");
+
+      setTimeout(() => {
+        this.classList.remove("shrink");
+      }, 300);
+    });
+  }
+});

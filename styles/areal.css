@@ -1,0 +1,165 @@
+.grid-wrapper {
+  width: 85%;
+  margin: 0 auto; /* центрирование по горизонтали */
+  padding-top: 0px; /* отступ сверху — настраивается произвольно */
+  padding-bottom: 60px; /* отступ снизу — настраивается произвольно */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* две колонки равной ширины */
+  grid-template-rows: repeat(15, auto); /* 15 строк */
+  gap: 10px 90px;
+  width: 100%;
+  margin-top: -200px;
+}
+
+/* Базовая ячейка */
+.grid__cell {
+  background: transparent;
+  padding: 0;
+  text-align: left; /* текст по левому краю по умолчанию */
+  min-width: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Текст: первые два слова — h4 */
+.grid__cell p {
+  text-align: left;
+}
+
+.grid__cell p strong {
+  font-size: 1.1em;
+  font-weight: 700;
+  display: inline;
+}
+
+/* ===== ОБЪЕДИНЕНИЕ СТРОК ===== */
+
+/* Строка 1 */
+.cell-r1 {
+  grid-column: 1 / -1; /* объединяем обе колонки */
+  text-align: center;
+  margin-bottom: 50px;
+}
+.cell-r1 h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  /* положение по высоте страницы настраивается через padding у .grid-wrapper */
+}
+
+/* Строка 4 */
+.cell-r4 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+/* Строка 12 */
+.cell-r12 {
+  grid-column: 1 / -1;
+  text-align: center; /* текст по центру */
+}
+
+/* Строка 13 */
+.cell-r13 {
+  grid-column: 1 / -1;
+}
+
+/* Строка 14 */
+.cell-r14 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+.grid__cell video {
+  display: inline-block;
+}
+
+/* Строка 15 */
+.cell-r15 {
+  grid-column: 1 / -1;
+  text-align: left;
+}
+
+/* ===== КАРТИНКИ ===== */
+.grid__cell img {
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---- Строка 4: картинка по центру ---- */
+.cell-r4 img {
+  margin: 0 auto;
+}
+
+/* ---- Строка 9, столбец 1: картинка слева, отступ сверху ---- */
+.cell-r9c1 video {
+
+  margin-top: 0px; /* отступ от верхнего края ячейки */
+  right: 0;
+}
+
+/* ---- Строка 11, столбец 1: картинка слева, отступ сверху ---- */
+.cell-r11c1 img {
+  margin-left: 0;
+  margin-top: 30px;
+}
+
+/* ---- Строка 14: картинка по центру ---- */
+.cell-r14 img {
+  margin: 0 auto;
+}
+
+/* ---- Строка 1, столбец 2: картинка справа, отступ сверху ---- */
+.cell-r1c2 img {
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 40px;
+}
+
+/* ---- Строка 15: картинка слева, отступ сверху ---- */
+.cell-r15 img {
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+/* ===== СПИСОК В СТРОКЕ 11, СТОЛБЕЦ 2 ===== */
+.species-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.species-list li {
+  padding: 4px 0;
+  font-size: 1rem;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+<span
+  style="color: hsl(var(--primary)); font-weight: 500;"
+  > @media</span>(max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cell-r1,
+  .cell-r4,
+  .cell-r12,
+  .cell-r13,
+  .cell-r14,
+  .cell-r15 {
+    grid-column: 1;
+  }
+}
+video {
+  width: 567px; /* Ширина видео */
+  height: 318px; /* Высота видео */
+  border-radius: 50px; /* Скругление углов (20 px) */
+  display: block; /* Убирает лишний отступ под видео */
+  outline: none; /* Убирает рамку фокуса */
+}

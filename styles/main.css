@@ -7,21 +7,34 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: "ComicSansMS";
+  font-size: 30px;
+  font-weight: 400;
+  color: #2f1715;
+  letter-spacing: 0px;
+}
+h2 {
+  font-family: "07NikumaruFont";
+  font-size: 96px;
+  font-weight: 800;
+  color: #2f1715;
+}
+h3 {
+  font-family: "07NikumaruFont";
+  font-size: 36px;
+  font-weight: 600;
+  color: #2f1715;
 }
 
 body {
   background-color: #aea083;
-  font-family: "07NikumaruFont";
-  font-size: 30px;
-  color: #18121e;
+
   background-image: url("../../assets/Images/fon_pages.png");
   background-size: cover;
   background-repeat: repeat-y;
   background-position: center;
   position: relative;
 }
-
-
 
 .main {
   position: relative;
@@ -127,10 +140,12 @@ body {
 
 .menu_block {
   display: none;
+
 }
 
 .menu_block.active {
   display: block;
+  
 }
 
 .menu {
@@ -146,11 +161,11 @@ body {
   left: 0;
   right: 0;
   padding-bottom: 300px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .menu_item {
-  padding: 70px 0;
+  padding: 40px 0;
 }
 
 .menu_item:nth-child(6) {
