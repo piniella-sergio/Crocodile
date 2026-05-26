@@ -32,7 +32,7 @@
   position: relative;
   width: 85%;
   min-height: 600px;
-  margin: -250px auto; /* Центрирует блок по горизонтали */
+  margin: -150px auto; /* Центрирует блок по горизонтали */
 }
 
 .structure-cell-full {
