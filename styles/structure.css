@@ -136,3 +136,17 @@
   border: none; /* Отсутствие обводки */
   display: block; /* Убираем лишние пробелы под изображением */
 }
+.bodystr-cell {
+  display: grid;
+  align-items: center; /* вертикальное выравнивание (опционально) */
+}
+
+/* Первая ячейка: выравнивание влево */
+.bodystr-row > .bodystr-cell:first-child {
+  justify-items: start;
+}
+
+/* Вторая ячейка: выравнивание вправо */
+.bodystr-row > .bodystr-cell:last-child {
+  justify-items: end;
+}

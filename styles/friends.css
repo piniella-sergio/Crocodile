@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+.friends .bodystr-container {
+margin: 0 auto !important;
+}
+.grid-wrapper {
+  width: 85%;
+  margin: 0 auto; /* центрирование по горизонтали */
+  padding-top: 0px; /* отступ сверху — настраивается произвольно */
+  padding-bottom: 60px; /* отступ снизу — настраивается произвольно */
+}
+/* CSS Document */
+.structure-container {
+  position: relative;
+  width: 85%;
+  min-height: 600px;
+  margin: -250px auto;
+  /* Центрирует блок по горизонтали */
+}
+
+.structure-cell-full {
+  grid-column: 1 / -1;
+  /* Объединяет все колонки от первой до последней */
+}
+
+/* Выравнивание по центру (для первой строки с заголовком) */
+.structure-cell-center {
+  text-align: center;
+}
+
+/* Выравнивание по левому краю (для второй строки с текстом) */
+.structure-cell-left {
+  text-align: left;
+}
+
+.structure-cell {
+  background: transparent;
+  min-height: 0;
+  word-wrap: break-word;
+}
+
+.bodystr-row {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: inherit;
+  gap: inherit;
+}
+
+.bodystr-cell {
+  padding: 10px;
+  min-height: auto;
+  box-sizing: border-box;
+}
+
+video {
+  width: 567px;
+  /* Ширина видео */
+  height: 318px;
+  /* Высота видео */
+  border-radius: 50px;
+  /* Скругление углов (20 px) */
+  display: block;
+  /* Убирает лишний отступ под видео */
+  outline: none;
+  /* Убирает рамку фокуса */
+}
+
+.grid__cell video {
+  display: inline-block;
+}
+
+.meta_container {
+  display: flex;
+  gap: 20px;
+  /* расстояние между блоками */
+}
+
+/* Строка 15 */
+.cell-r15 {
+  grid-column: 1 / -1;
+  text-align: left;
+}
+
+/* ===== КАРТИНКИ ===== */
+.grid__cell img {
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.friends .bodystr-row {
+  grid-template-columns: auto;
+
+}
+
+.friends video {
+  width: 100%;
+  height: auto;
+}
+
+.friends .bodystr-row {
+  margin: 40px 0 60px;
+}
